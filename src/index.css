@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* Custom font faces */
+@font-face {
+  font-family: "Outfit-bold";
+  font-weight: 600;
+  src: url(../src/assets/fonts/Outfit-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../src/assets/fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-md";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../src/assets/fonts/Outfit-Medium.ttf);
+}
+
+@theme {
+  --font-self: "Outfit-md";
+  --font-outfitbold: "Outfit-bold";
+  --font-outfit: "Outfit";
+  --color-brand: #ecf3ff;
+  --breakpoint-xs: 360px;
+  --text-shadow-xl: 0 35px 35px rgb(0, 0, 0 / 0.25); 
+
+}
+
+/* Base styling for the root container */
+#root{
+  background-color: #ecf3ff;
+  min-height:100vh;
+  font-family: "Outfit";
+}
+
+body{
+  font-family: var(--font-self), sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #787b7f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+/*Hiding Scrollbar*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+a{
+  text-decoration: none;
+}
