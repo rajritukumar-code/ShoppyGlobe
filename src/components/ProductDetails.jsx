@@ -126,7 +126,7 @@ const ProductDetails = () => {
 
   return (
     <section className="flex flex-col justify-center items-center h-fit w-full p-4">
-      <h1 className="text-blue-600 font-self max-[350px]:text-xl text-3xl md:text-4xl text-center  my-4">
+      <h1 className="text-[#3F8C84] font-self max-[350px]:text-xl text-3xl md:text-4xl text-center  my-4">
         Product Overview
       </h1>
       {/* Product Display Card */}
@@ -209,7 +209,7 @@ const ProductDetails = () => {
           {isAdded && (
             <Link
               to="/cart"
-              className={`max-[350px]:text-sm flex items-center justify-center text-center gap-3 px-3 py-2 mt-2 rounded-lg bg-blue-600 text-white `}>
+              className={`max-[350px]:text-sm flex items-center justify-center text-center gap-3 px-3 py-2 mt-2 rounded-full bg-[#3F8C84] text-white `}>
               Go To Cart <BiCart className=" max-[350px]:w-[20px] max-[350px]:h-[20px] h-[30px] w-[30px]" />
             </Link>
           )}

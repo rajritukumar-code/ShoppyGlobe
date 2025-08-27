@@ -5,7 +5,7 @@ import {
   BiLogoGmail,
 } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3.jpg";
 
 export default function Footer() {
   return (
@@ -15,8 +15,8 @@ export default function Footer() {
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse mb-2">
-            <img src={logo2} alt="Shoppy Globe Logo" className="max-[350px]:h-8 h-12" />
-            <span className="max-[350px]:text-xl text-2xl font-self text-blue-900 whitespace-nowrap">
+            <img src={logo3} alt="Shoppy Globe Logo" className="max-[350px]:h-8 h-12" />
+            <span className="max-[350px]:text-xl text-2xl font-self text-[#3F8C84] whitespace-nowrap">
               ShoppyGlobe
             </span>
           </Link>

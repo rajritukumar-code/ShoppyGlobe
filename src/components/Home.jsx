@@ -28,13 +28,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row max-[350px]:gap-2 gap-4  justify-center lg:justify-start">
             <button
               onClick={() => navigate("/products")}
-              className="bg-blue-600 max-[350px]:text-sm hover:bg-blue-700 text-white max-[350px]:py-2 max-[350px]:px-3 px-6 py-3 rounded-xl shadow-lg transition"
+              className="bg-[#41C7BA] max-[350px]:text-sm hover:bg-[#3F8C84] text-white max-[350px]:py-2 max-[350px]:px-3 px-6 py-3 rounded-full shadow-lg transition"
             >
               Start Shopping
             </button>
             <button
               onClick={() => scrollToMore()}
-              className="bg-white max-[350px]:text-sm hover:bg-gray-100 text-blue-600 border max-[350px]:py-2 max-[350px]:px-3 border-blue-600 px-6 py-3 rounded-xl shadow transition"
+              className="bg-white max-[350px]:text-sm hover:bg-gray-100 text-gray-800 border max-[350px]:py-2 max-[350px]:px-3 border-[#41C7BA] px-6 py-3 rounded-full shadow transition"
             >
               Learn More
             </button>
@@ -56,14 +56,14 @@ export default function Home() {
         </h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-6 lg:p-12">
           <div className="flex flex-col items-center text-center p-6 bg-gray-50 border-gray-200 border rounded-2xl shadow-md hover:shadow-lg transition">
-            <BiRocket size={48} className="text-blue-600 mb-4" />
+            <BiRocket size={48} className="text-[#41C7BA] mb-4" />
             <h3 className="max-[350px]:text-lg text-xl  mb-2">Fast Delivery</h3>
             <p className="max-[350px]:text-sm text-gray-600">
               Get your orders delivered to your doorstep in record time.
             </p>
           </div>
           <div className="flex flex-col items-center text-center p-6 border-gray-200 border bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition">
-            <BiShield size={48} className="text-blue-600 mb-4" />
+            <BiShield size={48} className="text-[#41C7BA] mb-4" />
             <h3 className="max-[350px]:text-lg text-xl  mb-2">
               Secure Payments
             </h3>
@@ -72,7 +72,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col border-gray-200 border items-center text-center p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition">
-            <BiSupport size={48} className="text-blue-600 mb-4" />
+            <BiSupport size={48} className="text-[#41C7BA] mb-4" />
             <h3 className="max-[350px]:text-lg text-xl  mb-2">24/7 Support</h3>
             <p className="max-[350px]:text-sm text-gray-600">
               Our support team is available around the clock to assist you.

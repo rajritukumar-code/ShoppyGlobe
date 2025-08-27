@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
-import  logo2 from "../assets/logo2.png";
+import  logo3 from "../assets/logo3.jpg";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +22,8 @@ function Header() {
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={logo2} alt="Shoppy Globe Logo" className="max-[350px]:h-8 h-15" />
-            <span className="text-xl min-[360px]:text-2xl font-self text-blue-900 whitespace-nowrap ">
+            <img src={logo3} alt="Shoppy Globe Logo" className="max-[350px]:h-8 h-12" />
+            <span className="text-xl min-[360px]:text-2xl font-self text-[#3F8C84] whitespace-nowrap ">
               ShoppyGlobe
             </span>
           </Link>
@@ -64,7 +64,7 @@ function Header() {
                 <Link
                   to="/"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:p-0">
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#41C7BA]  md:p-0">
                   Home
                 </Link>
               </li>
@@ -72,7 +72,7 @@ function Header() {
                 <Link
                   to="/products"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:p-0">
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#41C7BA]  md:p-0">
                   Products
                 </Link>
               </li>
@@ -81,7 +81,7 @@ function Header() {
                 <Link
                   to="/orders"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:p-0">
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#41C7BA]  md:p-0">
                   Orders
                 </Link>
               </li>
@@ -89,14 +89,14 @@ function Header() {
                 <Link
                   to="/cart"
                   onClick={() => setIsOpen(false)}
-                  className="hidden relative py-2 px-3 md:flex items-center text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">
+                  className="hidden relative py-2 px-3 md:flex items-center text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#41C7BA] md:p-0">
                   <BsCart3 className="text-2xl" />
                   {cart.length > 0 && (
                     <>
-                      <span className="absolute -top-1 -right-2 hidden md:flex  bg-blue-500 text-white text-xs w-5 h-5 rounded-full items-center justify-center">
+                      <span className="absolute -top-1 -right-2 hidden md:flex  bg-[#41C7BA] text-white text-xs w-5 h-5 rounded-full items-center justify-center">
                         {cart.length}
                       </span>
-                      <span className="absolute bottom-4 left-6 md:hidden  bg-blue-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                      <span className="absolute bottom-4 left-6 md:hidden  bg-[#41C7BA] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
                         {cart.length}
                       </span>
                     </>

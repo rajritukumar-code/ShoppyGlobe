@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
 @import "tailwindcss";
 
 /* Custom font faces */
@@ -24,7 +26,7 @@
 }
 
 @theme {
-  --font-self: "Outfit-md";
+  --font-self: "TikTok Sans";
   --font-outfitbold: "Outfit-bold";
   --font-outfit: "Outfit";
   --color-brand: #ecf3ff;
@@ -37,7 +39,7 @@
 #root{
   background-color: #ecf3ff;
   min-height:100vh;
-  font-family: "Outfit";
+  font-family:  "TikTok Sans", "sans-serif";
 }
 
 body{
